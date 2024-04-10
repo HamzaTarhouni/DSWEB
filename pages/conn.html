@@ -20,47 +20,47 @@
       <span>Password</span>
       <input type="password" />
     </label>
-    <p class="forgot-pass">Forgot password?</p>
     <button type="button" class="submit">Sign In</button>
 
   </div>
   <div class="sub-cont">
     <div class="img">
-      <div class="img__text m--up">
+      <div class="imgtext m--up">
 
         <h3>Don't have an account? Please Sign up!<h3>
       </div>
-      <div class="img__text m--in">
+      <div class="imgtext m--in">
 
         <h3>If you already has an account, just sign in.<h3>
       </div>
-      <div class="img__btn">
+      <div class="imgbtn">
         <span class="m--up">Sign Up</span>
         <span class="m--in">Sign In</span>
       </div>
     </div>
     <div class="form sign-up">
       <h2>Create your Account</h2>
+      <form action="PHP.php" method="post">
       <label>
         <span>Name</span>
-        <input type="text" />
+        <input type="text" name="nom"/>
       </label>
       <label>
         <span>Email</span>
-        <input type="email" />
+        <input type="email" name="mail"/>
       </label>
       <label>
         <span>Password</span>
-        <input type="password" />
+        <input type="password" name="pass" />
       </label>
-      <button type="button" class="submit">Sign Up</button>
-
+      <input value="sign up" type="submit" name="envoyer" id="sub"/>
+      </form>
     </div>
   </div>
 </div>
 
 <script>
-  document.querySelector('.img__btn').addEventListener('click', function() {
+  document.querySelector('.imgbtn').addEventListener('click', function() {
     document.querySelector('.cont').classList.toggle('s--signup');
   });
 </script>

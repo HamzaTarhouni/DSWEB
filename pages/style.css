@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   background: #ffffff;
@@ -23,6 +22,13 @@ button {
   font-size: 20px;
   margin: 40px auto 50px;
   text-align: center;
+}
+#sub{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: #00D9A5;
+  text-transform: uppercase;
+	
 }
 
 .cont {
